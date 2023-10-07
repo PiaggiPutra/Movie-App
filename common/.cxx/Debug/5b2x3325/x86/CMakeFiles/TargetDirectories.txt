@@ -1,0 +1,5 @@
+/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86/CMakeFiles/native-lib-production.dir
+/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86/CMakeFiles/rebuild_cache.dir
+/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86/CMakeFiles/edit_cache.dir
+/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86/CMakeFiles/native-lib-development.dir
+/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86/CMakeFiles/native-lib.dir

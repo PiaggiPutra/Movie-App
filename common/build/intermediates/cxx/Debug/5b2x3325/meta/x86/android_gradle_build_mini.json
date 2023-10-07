@@ -1,0 +1,57 @@
+{
+  "buildFiles": [
+    "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/piaggi/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/piaggi/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib-production-Debug-x86": {
+      "artifactName": "native-lib-production",
+      "buildCommandComponents": [
+        "/Users/piaggi/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86",
+        "native-lib-production"
+      ],
+      "abi": "x86",
+      "output": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx/Debug/5b2x3325/obj/x86/libnative-lib-production.so",
+      "runtimeFiles": []
+    },
+    "native-lib-development-Debug-x86": {
+      "artifactName": "native-lib-development",
+      "buildCommandComponents": [
+        "/Users/piaggi/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86",
+        "native-lib-development"
+      ],
+      "abi": "x86",
+      "output": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx/Debug/5b2x3325/obj/x86/libnative-lib-development.so",
+      "runtimeFiles": []
+    },
+    "native-lib-Debug-x86": {
+      "artifactName": "native-lib",
+      "buildCommandComponents": [
+        "/Users/piaggi/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86",
+        "native-lib"
+      ],
+      "abi": "x86",
+      "output": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx/Debug/5b2x3325/obj/x86/libnative-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

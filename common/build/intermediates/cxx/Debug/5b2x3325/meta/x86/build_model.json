@@ -1,0 +1,166 @@
+{
+  "abi": "X86",
+  "info": {
+    "abi": "X86",
+    "bitness": 32,
+    "deprecated": false,
+    "default": true
+  },
+  "cxxBuildFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86",
+  "soFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx/Debug/5b2x3325/obj/x86",
+  "soRepublishFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cmake/developmentDebug/obj/x86",
+  "abiPlatformVersion": 23,
+  "cmake": {
+    "effectiveConfiguration": {
+      "inheritEnvironments": [],
+      "variables": []
+    }
+  },
+  "variant": {
+    "buildSystemArgumentList": [],
+    "cFlagsList": [],
+    "cppFlagsList": [],
+    "variantName": "developmentDebug",
+    "soFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx/Debug/5b2x3325/obj",
+    "soRepublishFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cmake/developmentDebug/obj",
+    "cxxBuildFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325",
+    "intermediatesFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx/Debug/5b2x3325",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "module": {
+      "cxxFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx",
+      "intermediatesBaseFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates",
+      "intermediatesFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx",
+      "gradleModulePathName": ":common",
+      "moduleRootFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common",
+      "moduleBuildFile": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build.gradle.kts",
+      "makeFile": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "ndkFolder": "/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529",
+      "ndkVersion": "21.4.7075529",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 30,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30
+        }
+      },
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "cmakeToolchainFile": "/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529/build/cmake/android.toolchain.cmake",
+      "cmake": {
+        "isValidCmakeAvailable": true,
+        "cmakeExe": "/Users/piaggi/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+        "minimumCmakeVersion": "3.10.2",
+        "ninjaExe": "/Users/piaggi/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+      },
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      },
+      "project": {
+        "rootBuildGradleFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app",
+        "sdkFolder": "/Users/piaggi/Library/Android/sdk",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false
+      },
+      "nativeBuildOutputLevel": "QUIET"
+    },
+    "prefabClassPathFileCollection": [],
+    "prefabPackageDirectoryListFileCollection": [],
+    "stlType": "c++_static",
+    "optimizationTag": "Debug"
+  },
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "prefabFolder": "/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/prefab/x86",
+  "isActiveAbi": true,
+  "fullConfigurationHash": "5b2x3325n1kr181l2j1r5m3g451zu5e602i195441431917373p581jz5q",
+  "configurationArguments": [
+    "-H/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_SYSTEM_VERSION\u003d23",
+    "-DANDROID_PLATFORM\u003dandroid-23",
+    "-DANDROID_ABI\u003dx86",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86",
+    "-DANDROID_NDK\u003d/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529",
+    "-DCMAKE_ANDROID_NDK\u003d/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529",
+    "-DCMAKE_TOOLCHAIN_FILE\u003d/Users/piaggi/Library/Android/sdk/ndk/21.4.7075529/build/cmake/android.toolchain.cmake",
+    "-DCMAKE_MAKE_PROGRAM\u003d/Users/piaggi/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx/Debug/5b2x3325/obj/x86",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/build/intermediates/cxx/Debug/5b2x3325/obj/x86",
+    "-DCMAKE_BUILD_TYPE\u003dDebug",
+    "-B/Users/piaggi/AndroidStudioProjects/bintangpiaggi/test tb/movie app/common/.cxx/Debug/5b2x3325/x86",
+    "-GNinja"
+  ]
+}
