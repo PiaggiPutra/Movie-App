@@ -2,11 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph_base"
-    app:startDestination="@id/nav_graph_main">
+    app:startDestination="@id/nav_graph_home">
 
-    <include app:graph="@navigation/nav_graph_main" />
     <include app:graph="@navigation/nav_graph_home" />
-    <include app:graph="@navigation/nav_graph_login" />
+    <include app:graph="@navigation/nav_graph_detail"/>
 
     <action
         android:id="@+id/action_global_home_flow"
@@ -15,9 +14,14 @@
         app:exitAnim="@anim/nav_default_exit_anim"
         app:popUpTo="@id/nav_graph_base" />
     <action
-        android:id="@+id/action_global_login_flow"
-        app:destination="@id/nav_graph_login"
+        android:id="@+id/action_global_detail_flow"
+        app:destination="@id/nav_graph_detail"
         app:enterAnim="@anim/nav_default_enter_anim"
-        app:exitAnim="@anim/nav_default_exit_anim"
-        app:popUpTo="@id/nav_graph_base" />
+        app:exitAnim="@anim/nav_default_exit_anim" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            app:nullable="false"
+            android:defaultValue="0"/>
+    </action>
 </navigation>

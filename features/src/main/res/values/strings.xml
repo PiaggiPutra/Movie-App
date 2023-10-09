@@ -1,6 +1,9 @@
 <resources>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="home">HOME</string>
-    <string name="login">LOGIN</string>
+    <string name="label_movie_app">Movie App</string>
+    <string name="text_add_favorite_item">Item has been added to favorite</string>
+    <string name="text_remove_favorite_item">Item has been deleted to favorite</string>
+    <string name="label_favorite_movie">Favorite Movie</string>
+    <string name="title_reviews">Reviews</string>
+    <string name="title_videos">Videos</string>
 </resources>

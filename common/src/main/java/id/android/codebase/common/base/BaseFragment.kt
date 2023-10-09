@@ -1,5 +1,7 @@
 package id.android.codebase.common.base
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -87,6 +89,10 @@ abstract class BaseFragment<V : ViewDataBinding, VM : BaseViewModel> : Fragment(
                 }
             }
         }
+    }
+    fun openUrl(uri: String){
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+        requireContext().startActivity(intent)
     }
 
     fun showSystemUI() {

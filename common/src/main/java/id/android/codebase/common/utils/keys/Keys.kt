@@ -19,4 +19,7 @@ object Keys {
         return EnvKeys.baseApiUrl()
     }
 
+    const val BASE_URL_IMAGE = "https://image.tmdb.org/t/p/original"
+    const val BASE_URL_YT_THUMBNAIL = "https://img.youtube.com/vi/"
+    const val BASE_YT_URL = "https://www.youtube.com/watch?v="
 }
