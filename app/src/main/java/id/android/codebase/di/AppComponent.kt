@@ -1,3 +1,5 @@
 package id.android.codebase.di
 
-val appComponent = listOf(createRemoteModule("https://api.github.com/"), repositoryModule, localModule, featuresModule)
+import id.android.codebase.BuildConfig
+
+val appComponent = listOf(createRemoteModule(BuildConfig.BASE_URL, BuildConfig.ACCESS_TOKEN), repositoryModule, localModule, featuresModule)

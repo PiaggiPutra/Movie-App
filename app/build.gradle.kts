@@ -22,10 +22,16 @@ android {
             isMinifyEnabled = BuildTypeRelease.isMinifyEnabled
             isShrinkResources = BuildTypeRelease.isShrinkResources
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            buildConfigField( "String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
+            buildConfigField( "String", "ACCESS_TOKEN", "\"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZGI1NmE5MmJkOTA4NmZlN2JlNTVjNGNlZjdlZjBhNCIsInN1YiI6IjVlY2VhNTRlMjFjNGNhMDAyMWRiZTJmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.d-zGf7OqSijv07feKjYYArrKsZ6J8KJgTjz0knA66x0\"")
+
+
         }
         getByName(BuildType.DEBUG) {
 //            signingConfig = signingConfigs.getByName("defaultSigning")
             isMinifyEnabled = BuildTypeDebug.isMinifyEnabled
+            buildConfigField( "String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
+            buildConfigField( "String", "ACCESS_TOKEN", "\"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZGI1NmE5MmJkOTA4NmZlN2JlNTVjNGNlZjdlZjBhNCIsInN1YiI6IjVlY2VhNTRlMjFjNGNhMDAyMWRiZTJmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.d-zGf7OqSijv07feKjYYArrKsZ6J8KJgTjz0knA66x0\"")
         }
     }
 

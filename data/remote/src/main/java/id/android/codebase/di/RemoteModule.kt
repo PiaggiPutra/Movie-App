@@ -1,7 +1,10 @@
 package id.android.codebase.di
 
+import id.android.codebase.data.remote.ApiService
 import id.android.codebase.data.remote.ExampleDatasource
 import id.android.codebase.data.remote.ExampleService
+import id.android.codebase.data.remote.MovieDataSource
+import id.android.codebase.utils.OAuthInterceptor
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -11,7 +14,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import com.chuckerteam.chucker.api.ChuckerInterceptor.Builder as ChuckerBuilder
 
-fun createRemoteModule(baseUrl: String) = module {
+fun createRemoteModule(baseUrl: String, accessToken : String) = module {
 
     factory<Interceptor> {
         HttpLoggingInterceptor()
@@ -20,6 +23,7 @@ fun createRemoteModule(baseUrl: String) = module {
 
     factory {
         OkHttpClient.Builder()
+            .addInterceptor(OAuthInterceptor("Bearer",accessToken))
             .addInterceptor(get<Interceptor>())
             .addInterceptor(ChuckerBuilder(androidApplication().applicationContext).build())
             .build()
@@ -33,7 +37,7 @@ fun createRemoteModule(baseUrl: String) = module {
             .build()
     }
 
-    factory { get<Retrofit>().create(ExampleService::class.java) }
+    factory { get<Retrofit>().create(ApiService::class.java) }
 
-    factory { ExampleDatasource(get()) }
+    factory { MovieDataSource(get()) }
 }
