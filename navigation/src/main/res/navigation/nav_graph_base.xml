@@ -6,6 +6,7 @@
 
     <include app:graph="@navigation/nav_graph_home" />
     <include app:graph="@navigation/nav_graph_detail"/>
+    <include app:graph="@navigation/nav_graph_favorite"/>
 
     <action
         android:id="@+id/action_global_home_flow"
@@ -24,4 +25,9 @@
             app:nullable="false"
             android:defaultValue="0"/>
     </action>
+    <action
+        android:id="@+id/action_global_favorite_flow"
+        app:destination="@id/nav_graph_favorite"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
 </navigation>

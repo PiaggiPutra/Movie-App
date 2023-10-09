@@ -13,12 +13,29 @@
                       <LayoutPositions />
                     </value>
                   </entry>
+                  <entry key="action_global_favorite_flow">
+                    <value>
+                      <LayoutPositions />
+                    </value>
+                  </entry>
                   <entry key="action_global_home_flow">
                     <value>
                       <LayoutPositions />
                     </value>
                   </entry>
                   <entry key="nav_graph_detail">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="nav_graph_favorite">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -53,6 +70,28 @@
               <option name="myPositions">
                 <map>
                   <entry key="detailMovieFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </LayoutPositions>
+          </value>
+        </entry>
+        <entry key="nav_graph_favorite.xml">
+          <value>
+            <LayoutPositions>
+              <option name="myPositions">
+                <map>
+                  <entry key="favoriteMovieFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">

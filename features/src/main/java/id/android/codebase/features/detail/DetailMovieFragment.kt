@@ -2,11 +2,13 @@ package id.android.codebase.features.detail
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.core.widget.NestedScrollView
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import id.android.codebase.common.base.BaseFragment
 import id.android.codebase.common.utils.keys.Keys
+import id.android.codebase.data.model.MovieItem
 import id.android.codebase.features.R
 import id.android.codebase.features.databinding.FragmentDetailMovieBinding
 import id.android.codebase.features.detail.adapter.ReviewAdapter
@@ -19,6 +21,8 @@ class DetailMovieFragment : BaseFragment<FragmentDetailMovieBinding, DetailMovie
     override fun getLayoutResId() = R.layout.fragment_detail_movie
     private val args: DetailMovieFragmentArgs by navArgs()
     private var isFirstShow : Boolean = true
+    private var dataFavorite : MovieItem? = null
+
 
     private val videosAdapter by lazy {
         VideosAdapter {
@@ -35,6 +39,7 @@ class DetailMovieFragment : BaseFragment<FragmentDetailMovieBinding, DetailMovie
             viewModel.getMovieDetail(args.id)
             viewModel.getDataVideos(args.id)
             viewModel.getReviewMovie(args.id)
+            viewModel.checkMovieItemFavorite(args.id)
             observer()
         }
     }
@@ -60,6 +65,18 @@ class DetailMovieFragment : BaseFragment<FragmentDetailMovieBinding, DetailMovie
     }
 
     private fun observer(){
+        viewModel.movieData.observe(viewLifecycleOwner){
+            if (it != null){
+                dataFavorite = MovieItem(it.id, it.originalTitle, it.posterPath, it.voteAverage)
+                viewModel.checkMovieItemFavorite(it.id)
+                handleFavoriteItem(dataFavorite!!)
+            }
+        }
+        viewModel.isFavorite.observe(viewLifecycleOwner){
+            if (it != null && !isFirstShow){
+                handleFavoriteItem(dataFavorite!!)
+            }
+        }
         viewModel.urlImage.observe(viewLifecycleOwner){
             if (!it.isNullOrEmpty()) initImage()
         }
@@ -78,8 +95,27 @@ class DetailMovieFragment : BaseFragment<FragmentDetailMovieBinding, DetailMovie
             }
         }
     }
-
-
+    private fun handleFavoriteItem(data: MovieItem) {
+        binding?.apply {
+            if (viewModel?.isFavorite?.value == true) {
+                ivFavoriteDetail.setImageResource(R.drawable.ic_favorite_black)
+                ivFavoriteDetail.setOnClickListener {
+                    viewModel?.deleteFavoriteMovieItem(data.originalTitle)
+                    Toast.makeText(requireContext(), getString(R.string.text_remove_favorite_item), Toast.LENGTH_SHORT).show()
+                    ivFavoriteDetail.setImageResource(R.drawable.ic_favorite_border_black)
+                    viewModel?.checkMovieItemFavorite(data.id)
+                }
+            }else{
+                ivFavoriteDetail.setImageResource(R.drawable.ic_favorite_border_black)
+                ivFavoriteDetail.setOnClickListener {
+                    viewModel?.addToFavoriteMovie(data)
+                    ivFavoriteDetail.setImageResource(R.drawable.ic_favorite_black)
+                    Toast.makeText(requireContext(), getString(R.string.text_add_favorite_item), Toast.LENGTH_SHORT).show()
+                    viewModel?.checkMovieItemFavorite(data.id)
+                }
+            }
+        }
+    }
     override fun setupListener() {
         super.setupListener()
         binding?.apply {

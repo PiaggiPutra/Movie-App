@@ -68,5 +68,8 @@ class HomeViewModel(
     fun navigateToDetail(id : Int) {
         navigate(NavGraphBaseDirections.actionGlobalDetailFlow(id))
     }
+    fun navigateToFavorite() {
+        navigate(NavGraphBaseDirections.actionGlobalFavoriteFlow())
+    }
 }
 

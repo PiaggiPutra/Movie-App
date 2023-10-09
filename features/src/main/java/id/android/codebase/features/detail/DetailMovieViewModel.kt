@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import id.android.codebase.common.base.BaseViewModel
 import id.android.codebase.common.utils.keys.Keys
+import id.android.codebase.data.model.MovieItem
 import id.android.codebase.data.model.ReviewItem
 import id.android.codebase.data.model.response.DetailMovieResponse
 import id.android.codebase.data.model.response.DetailMovieVideosResponse
@@ -36,6 +37,9 @@ class DetailMovieViewModel(
 
     private val _reviewItemList = MutableLiveData(mutableListOf<ReviewItem>())
     val reviewItemList: LiveData<MutableList<ReviewItem>> get() = _reviewItemList
+
+    private val _isFavorite = MutableLiveData<Boolean>()
+    val isFavorite: MutableLiveData<Boolean> get() = _isFavorite
 
     fun getMovieDetail(id: Int) =
         viewModelScope.launch(appDispatchers.io) {
@@ -84,4 +88,23 @@ class DetailMovieViewModel(
 
         }
 
+    fun addToFavoriteMovie(data: MovieItem) {
+        viewModelScope.launch(appDispatchers.io) {
+            movieRepository.addMovieFavorite(data)
+        }
+    }
+
+    fun deleteFavoriteMovieItem(name: String) {
+        viewModelScope.launch(appDispatchers.io) {
+            movieRepository.deleteMovieFavoriteItem(name)
+        }
+    }
+
+    fun checkMovieItemFavorite(id: Int) {
+        viewModelScope.launch(appDispatchers.io) {
+            movieRepository.checkIfFavoriteItemMovie(id).let {
+                _isFavorite.postValue(it)
+            }
+        }
+    }
 }

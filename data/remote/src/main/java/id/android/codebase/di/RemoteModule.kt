@@ -1,8 +1,6 @@
 package id.android.codebase.di
 
 import id.android.codebase.data.remote.ApiService
-import id.android.codebase.data.remote.ExampleDatasource
-import id.android.codebase.data.remote.ExampleService
 import id.android.codebase.data.remote.MovieDataSource
 import id.android.codebase.utils.OAuthInterceptor
 import okhttp3.Interceptor

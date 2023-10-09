@@ -45,7 +45,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>() {
             viewModelBinding = viewModel
             rvMovie.adapter = movieAdapter
             rvCategory.adapter = categoryAdapter
-
+            ibFavoriteHome.setOnClickListener {
+                viewModel.navigateToFavorite()
+            }
         }
     }
 
